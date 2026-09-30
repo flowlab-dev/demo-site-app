@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Flow Lab",
+    "slug": "flowlab-site-app",
+    "scheme": "flowlab",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "dev.flowlab.siteapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSCameraUsageDescription": "Flow Lab uses the camera only when you choose to attach a photo to a form on our site.",
+        "NSPhotoLibraryUsageDescription": "Flow Lab opens your photos only when you choose to attach one to a form on our site.",
+        "NSMicrophoneUsageDescription": "Flow Lab uses the microphone only when you choose to record a video for a form on our site."
+      }
+    },
+    "android": {
+      "package": "dev.flowlab.siteapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#0F766E"
+      },
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/icon.png",
+          "imageWidth": 120,
+          "resizeMode": "contain",
+          "backgroundColor": "#F7F8F8",
+          "dark": {
+            "image": "./assets/icon.png",
+            "backgroundColor": "#0E1413"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#0F766E"
+        }
+      ]
+    ]
+  }
+}

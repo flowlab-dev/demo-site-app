@@ -1,0 +1,38 @@
+{
+  "name": "flowlab-site-app-kit",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "dependencies": {
+    "@expo/metro-runtime": "~57.0.16",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~57.0.24",
+    "expo-notifications": "~57.0.20",
+    "expo-splash-screen": "~57.0.9",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4",
+    "react-native-web": "^0.21.2",
+    "react-native-webview": "13.16.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.6",
+    "@types/react": "~19.2.2",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --disable-warning=ExperimentalWarning --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build:web": "EXPO_PUBLIC_KIT_MODE=test expo export -p web --clear",
+    "check:native": "expo export -p ios -p android --output-dir dist-native && rm -rf dist-native",
+    "test:page": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/page.test.mjs",
+    "check": "npm run typecheck && npm test && npm run check:native && npm run build:web && npm run test:page && npm run build:demo && npm run test:demo",
+    "build:demo": "EXPO_PUBLIC_KIT_MODE=demo KIT_BASE_URL=/demo/site-app expo export -p web --clear --output-dir dist-demo && node scripts/demo.mjs",
+    "test:demo": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test tests/demo.test.mjs"
+  },
+  "private": true,
+  "license": "MIT"
+}

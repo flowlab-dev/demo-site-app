@@ -1,0 +1,45 @@
+/* Crumb & Co — a fictional bakery site for the Flow Lab "site → app" demo. */
+:root {
+  --bg: #FBF7F1; --surface: #FFFFFF; --ink: #2A1F17; --muted: #6B5B4E; --line: #EADFD2;
+  --accent: #9A3412; --accent-soft: #F7E6DA;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1A1411; --surface: #231B17; --ink: #F3EAE2; --muted: #BFAE9F; --line: #3A2E27; --accent: #F59E6B; --accent-soft: #3A2419; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+/* the site's own header and footer — hidden inside the app (the tab bar replaces them) */
+body > header { background: var(--surface); border-bottom: 1px solid var(--line); }
+body > header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; flex-wrap: wrap; }
+.brand { font: 700 20px/1 ui-serif, Georgia, serif; color: var(--ink); text-decoration: none; }
+body > header nav { display: flex; gap: 16px; }
+body > header nav a { color: var(--muted); text-decoration: none; font-size: 15px; padding: 10px 0; }
+body > header nav a[aria-current] { color: var(--ink); font-weight: 600; }
+body > footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; padding: 24px 0 40px; margin-top: 48px; }
+
+.demo-note { background: var(--accent-soft); color: var(--ink); font-size: 13px; text-align: center; padding: 8px 16px; }
+main { padding: 28px 0 8px; }
+.eyebrow { color: var(--accent); font-weight: 600; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; margin: 0 0 8px; }
+h1 { font: 700 clamp(32px, 8vw, 48px)/1.08 ui-serif, Georgia, serif; margin: 0 0 14px; letter-spacing: -.01em; }
+h2 { font: 700 24px/1.2 ui-serif, Georgia, serif; margin: 36px 0 12px; }
+.lead { color: var(--muted); font-size: 19px; margin: 0 0 22px; }
+.hero-art { border-radius: 22px; overflow: hidden; background: var(--accent-soft); margin: 8px 0 24px; }
+.hero-art svg { display: block; width: 100%; height: auto; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 14px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
+@media (prefers-color-scheme: dark) { .btn { color: #1A1411; } }
+.btn.ghost { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+.row { display: flex; gap: 12px; flex-wrap: wrap; }
+.cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+.card h3 { margin: 0 0 4px; font-size: 18px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.price { float: right; font-weight: 700; color: var(--ink); }
+.list { list-style: none; padding: 0; margin: 0; }
+.list li { display: flex; justify-content: space-between; gap: 12px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.list li span:last-child { font-weight: 600; white-space: nowrap; }
+.muted { color: var(--muted); }

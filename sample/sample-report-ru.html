@@ -1,0 +1,57 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Ваш сайт — приложение: отчёт первого этапа — Crumb &amp; Co</title><style>
+:root{--bg:#f7f8f8;--card:#fff;--ink:#111827;--muted:#4b5563;--line:#d9dee0;--accent:#0f766e}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1413;--card:#17201f;--ink:#ecf1f0;--muted:#a7b4b2;--line:#2a3634;--accent:#5eead4}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:920px;margin:0 auto;padding:32px 16px 48px}h1{font-size:28px;line-height:1.2;margin:0 0 12px}h2{font-size:20px;margin:30px 0 10px}
+p{margin:6px 0;color:var(--muted)}p b{color:var(--ink)}a{color:var(--accent);word-break:break-all}.note{border:1.5px solid var(--accent);border-radius:12px;padding:10px 14px;color:var(--ink);margin-bottom:18px}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;margin:14px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+td.lvl{width:1.5em}ul,ol{background:var(--card);border-radius:14px;padding:14px 14px 14px 34px;margin:10px 0}li{margin:4px 0}
+.shots{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}figure{margin:0;flex:1 1 200px;max-width:260px}figure img{width:100%;height:auto;border-radius:22px;border:1px solid var(--line);display:block}
+figcaption{font-size:14px;color:var(--muted);text-align:center;margin-top:6px}
+@media (max-width:640px){table,thead,tbody,tr,td,th{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:2px 8px}td.lvl,td:nth-child(2){display:inline-block;width:auto;padding-right:0}td:nth-child(2){font-weight:600;color:var(--ink)}}
+</style></head><body><main><p class=note>Пример отчёта на нашей демо-пекарне (Crumb &amp; Co — вымышленная) — такой отчёт вы получите по своему сайту на первом этапе.</p><h1>Ваш сайт — приложение: отчёт первого этапа — Crumb &amp; Co</h1>
+<p>Сайт: <a href="https://flowlab-dev.github.io/demo/site-app/site/">https://flowlab-dev.github.io/demo/site-app/site/</a> · проверен 2026-09-28</p>
+<p><b>Итог: сайт готов стать приложением.</b> Подготовить: 2 · заметок: 1.</p>
+<h2>Что мы проверили</h2>
+<table><thead><tr><th></th><th>Проверка</th><th>Результат</th><th>Что это значит</th></tr></thead><tbody>
+<tr><td class=lvl>✅</td><td>Защищённое соединение (https)</td><td>да</td><td>Приложение сможет открыть ваши страницы.</td></tr>
+<tr><td class=lvl>✅</td><td>Вёрстка под телефон</td><td>да</td><td>Страницы уже подходят под экран телефона.</td></tr>
+<tr><td class=lvl>✅</td><td>Ваше меню → вкладки приложения</td><td>Home · Menu · Visit · Call</td><td>Родная панель внизу приложения; ваши шапка и подвал внутри приложения скрыты.</td></tr>
+<tr><td class=lvl>✅</td><td>Телефон для звонка в одно касание</td><td>+1 207 555 0188</td><td>Вкладка «Позвонить» и кнопка звонка на экране «нет интернета» — работает без сети.</td></tr>
+<tr><td class=lvl>🟡</td><td>Значок приложения</td><td>не найден</td><td>Пришлите логотип квадратом — значок App Store 1024×1024 без прозрачности.</td></tr>
+<tr><td class=lvl>🟡</td><td>Политика конфиденциальности</td><td>не найдена</td><td>Оба магазина требуют открытую страницу политики конфиденциальности. Добавьте её на сайт (можем разместить согласованный вами текст).</td></tr>
+<tr><td class=lvl>⚪</td><td>Владелец</td><td>ваш сайт</td><td>Google Play принимает приложение сайта только от его владельца (или с письменным разрешением).</td></tr>
+</tbody></table>
+<h2>Что приложение добавит к сайту</h2>
+<p>Apple отклоняет приложения, которые — «просто сайт в обёртке» (правило App Review 4.2). В вашем приложении будут родные части:</p>
+<ul>
+<li>нижняя панель вкладок из вашего меню; ваши шапка и подвал скрыты</li>
+<li>экран «нет интернета» с вашим телефоном и почтой — работает без сети</li>
+<li>чужие сайты, карты, телефон и почта открываются в приложениях телефона; приложение остаётся на месте</li>
+<li>жест «назад» (iPhone) и кнопка «назад» (Android) по вашим страницам, по желанию — вкладка «Поделиться»</li>
+<li>по желанию: push-уведомления о новостях и акциях, открывающие нужную страницу (отдельный этап)</li>
+</ul>
+<h2>Как будет выглядеть приложение</h2>
+<div class=shots>
+<figure><img src="../img/home.png" alt="Главная" width="390" height="844" loading="lazy"><figcaption>Главная</figcaption></figure>
+<figure><img src="../img/menu.png" alt="Меню" width="390" height="844" loading="lazy"><figcaption>Меню</figcaption></figure>
+<figure><img src="../img/offline.png" alt="Нет интернета" width="390" height="844" loading="lazy"><figcaption>Нет интернета</figcaption></figure>
+</div>
+<h2>Что нужно от вас</h2>
+<ol>
+<li>Аккаунты магазинов на ваше имя: Apple Developer (99 $ в год) и Google Play Console (25 $ один раз). Публикуем с ваших аккаунтов — приложение ваше.</li>
+<li>Логотип квадратом и название приложения (до 30 знаков).</li>
+<li>Открытая страница политики конфиденциальности на сайте.</li>
+<li>Кто попробует тестовую сборку на своём телефоне (iPhone — TestFlight, Android — ссылка).</li>
+<li>Google Play, личный аккаунт разработчика, созданный после 13.11.2023: до выпуска 12 тестировщиков должны пробыть в закрытом тесте 14 дней подряд (правило Google). У аккаунта компании этого шага нет.</li>
+</ol>
+<h2>План по шагам</h2>
+<ol>
+<li>Тестовая сборка приложения на вашем телефоне — через 1–2 рабочих дня после старта.</li>
+<li>Ваши замечания и один круг правок.</li>
+<li>Страницы в магазинах: название, описание, скриншоты, ответы о приватности.</li>
+<li>Отправка с ваших аккаунтов и ответы проверяющим. Сроки проверки задают Apple и Google.</li>
+<li>После запуска: обновлять приложение при изменениях сайта не нужно — оно показывает ваши живые страницы.</li>
+</ol></main></body></html>

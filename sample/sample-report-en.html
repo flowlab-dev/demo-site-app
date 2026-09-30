@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Your website as an app — first-stage report: Crumb &amp; Co</title><style>
+:root{--bg:#f7f8f8;--card:#fff;--ink:#111827;--muted:#4b5563;--line:#d9dee0;--accent:#0f766e}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1413;--card:#17201f;--ink:#ecf1f0;--muted:#a7b4b2;--line:#2a3634;--accent:#5eead4}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:920px;margin:0 auto;padding:32px 16px 48px}h1{font-size:28px;line-height:1.2;margin:0 0 12px}h2{font-size:20px;margin:30px 0 10px}
+p{margin:6px 0;color:var(--muted)}p b{color:var(--ink)}a{color:var(--accent);word-break:break-all}.note{border:1.5px solid var(--accent);border-radius:12px;padding:10px 14px;color:var(--ink);margin-bottom:18px}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden;margin:14px 0;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}th{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+td.lvl{width:1.5em}ul,ol{background:var(--card);border-radius:14px;padding:14px 14px 14px 34px;margin:10px 0}li{margin:4px 0}
+.shots{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}figure{margin:0;flex:1 1 200px;max-width:260px}figure img{width:100%;height:auto;border-radius:22px;border:1px solid var(--line);display:block}
+figcaption{font-size:14px;color:var(--muted);text-align:center;margin-top:6px}
+@media (max-width:640px){table,thead,tbody,tr,td,th{display:block}thead{display:none}tr{border-bottom:1px solid var(--line);padding:8px 4px}td{border:0;padding:2px 8px}td.lvl,td:nth-child(2){display:inline-block;width:auto;padding-right:0}td:nth-child(2){font-weight:600;color:var(--ink)}}
+</style></head><body><main><p class=note>Sample report on our demo bakery (Crumb &amp; Co is fictional) — this is what you get for your own website at the first stage.</p><h1>Your website as an app — first-stage report: Crumb &amp; Co</h1>
+<p>Site: <a href="https://flowlab-dev.github.io/demo/site-app/site/">https://flowlab-dev.github.io/demo/site-app/site/</a> · checked 2026-09-28</p>
+<p><b>Verdict: ready to become an app.</b> 2 to prepare · 1 note.</p>
+<h2>What we checked</h2>
+<table><thead><tr><th></th><th>Check</th><th>Result</th><th>What it means</th></tr></thead><tbody>
+<tr><td class=lvl>✅</td><td>Secure connection (https)</td><td>yes</td><td>The app can open your pages.</td></tr>
+<tr><td class=lvl>✅</td><td>Phone layout</td><td>yes</td><td>Your pages already fit a phone screen.</td></tr>
+<tr><td class=lvl>✅</td><td>Your menu → app tabs</td><td>Home · Menu · Visit · Call</td><td>The native bar at the bottom of the app; your own header and footer are hidden inside the app.</td></tr>
+<tr><td class=lvl>✅</td><td>Phone for one-tap call</td><td>+1 207 555 0188</td><td>A Call tab, and a call button on the &quot;no internet&quot; screen that works offline.</td></tr>
+<tr><td class=lvl>🟡</td><td>App icon</td><td>not found</td><td>Send your logo as a square image — the App Store icon is 1024×1024 without transparency.</td></tr>
+<tr><td class=lvl>🟡</td><td>Privacy Policy page</td><td>not found</td><td>Both stores require a public Privacy Policy page. Please add one to the site (we can place the text you approve).</td></tr>
+<tr><td class=lvl>⚪</td><td>Ownership</td><td>your site</td><td>Google Play accepts an app of a website only from its owner (or with written permission).</td></tr>
+</tbody></table>
+<h2>What the app adds beyond your website</h2>
+<p>Apple rejects apps that are &quot;a repackaged website&quot; (App Review Guideline 4.2). Your app gets native parts:</p>
+<ul>
+<li>a bottom tab bar made from your menu, with your own header and footer hidden</li>
+<li>a &quot;no internet&quot; screen with your phone and email — it works offline</li>
+<li>other websites, maps, phone and email open in the phone's own apps; the app stays where it was</li>
+<li>back gesture (iPhone) and back button (Android) through your pages, and a Share tab if you want one</li>
+<li>optional: push notifications for news and offers that open the right page (a separate stage)</li>
+</ul>
+<h2>How your app will look</h2>
+<div class=shots>
+<figure><img src="img/home.png" alt="Home" width="390" height="844" loading="lazy"><figcaption>Home</figcaption></figure>
+<figure><img src="img/menu.png" alt="Menu" width="390" height="844" loading="lazy"><figcaption>Menu</figcaption></figure>
+<figure><img src="img/offline.png" alt="No internet" width="390" height="844" loading="lazy"><figcaption>No internet</figcaption></figure>
+</div>
+<h2>What we need from you</h2>
+<ol>
+<li>Store accounts in your name: Apple Developer ($99 a year) and Google Play Console ($25 once). We publish from your accounts; you own the app.</li>
+<li>Your logo as a square image, and the app name (up to 30 characters).</li>
+<li>A public Privacy Policy page on your site.</li>
+<li>Someone to try the test build on their phone (iPhone: TestFlight; Android: a link).</li>
+<li>Google Play, personal developer account created after 13 Nov 2023: before the app goes live, 12 testers must stay in a closed test for 14 days in a row (Google's rule). A company account does not have this step.</li>
+</ol>
+<h2>Plan, step by step</h2>
+<ol>
+<li>Test build of your app on your phone — 1–2 working days after we start.</li>
+<li>Your feedback and one round of changes.</li>
+<li>Store pages: name, description, screenshots, privacy answers.</li>
+<li>Submission from your accounts and answers to the reviewers. Review time is set by Apple and Google.</li>
+<li>After launch: updates when your site changes are not needed — the app shows your live pages.</li>
+</ol></main></body></html>
